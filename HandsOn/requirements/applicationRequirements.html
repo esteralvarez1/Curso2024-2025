@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Application Requirements</title>
+        <meta name="description" content="Application requirements for smart city rail transportation analysis.">
+        <meta name="keywords" content="application, smart city, rail transportation, user interface, data visualization">
+    </head>
+
+    <body>
+    <h1>Application Requirements</h1>
+
+    <h2>Application Overview</h2>
+    <p>The application aims to provide an interactive platform for analyzing and visualizing rail transportation data in a smart city context. The app will allow city planners, transportation authorities, and the public to monitor rail services, passenger volumes, and the operational efficiency of rail routes. Users will be able to make data-driven decisions to improve transportation infrastructure and public transit services.</p>
+
+    <h2>Core Features</h2>
+    <ul>
+        <li><strong>Data Visualization:</strong> Users can view charts and graphs that display key performance indicators such as the number of passengers (viajeros), train occupancy (plazas ofertadas), and the distance traveled by passengers (viajeros.km) on different rail routes.</li>
+        <li><strong>Geographical Mapping:</strong> The application will include an interactive map that shows rail corridors, stations, and routes across Spain. Data from the dataset can be linked with geographical entities like cities or rail stations for better context.</li>
+        <li><strong>Filtering and Comparison:</strong> Users will be able to filter the data by time periods, train types (e.g., long-distance, medium-distance, commuter trains), and specific corridors. Additionally, users can compare performance metrics between different rail routes.</li>
+        <li><strong>Trend Analysis:</strong> The application will provide tools to analyze historical trends in passenger volumes and operational efficiency, helping to forecast future needs and optimize resource allocation.</li>
+    </ul>
+
+    <h2>User Interface (UI) Requirements</h2>
+    <p>The user interface will focus on providing an intuitive and interactive experience. Below are the key components of the UI:</p>
+
+    <h3>1. Dashboard</h3>
+    <p>The main dashboard will include an overview of rail transportation statistics with visual representations (bar charts, line graphs, etc.). It will allow users to quickly grasp the overall performance of rail services.</p>
+
+    <h3>2. Interactive Map</h3>
+    <p>An embedded map will show rail corridors and stations, enabling users to select routes and visualize the flow of passengers and operational data for specific lines.</p>
+
+    <h3>3. Filtering Panel</h3>
+    <p>Users will be able to filter data based on criteria such as time periods, train types (e.g., commuter, long-distance), and geographical locations. Filters will dynamically update the visualizations in real-time.</p>
+
+    <h3>4. Comparison Tool</h3>
+    <p>The comparison tool will allow users to select multiple rail routes or time periods to compare their performance side-by-side, highlighting key differences in operational efficiency or passenger volumes.</p>
+
+    <h2>Mock-ups</h2>
+    <p>Below are visual mock-ups of the user interface components:</p>
+    
+    <img src="mockup_dashboard.png" alt="Mock-up of the Dashboard">
+    <p><strong>Figure 1:</strong> The main dashboard showcasing key statistics of rail transportation data.</p>
+
+    <img src="mockup_map.png" alt="Mock-up of the Interactive Map">
+    <p><strong>Figure 2:</strong> The interactive map where users can visualize rail routes and stations.</p>
+
+    <h2>Technical Requirements</h2>
+    <p>The application will be built using the following technologies:</p>
+    <ul>
+        <li><strong>Frontend:</strong> HTML, CSS, JavaScript (using libraries such as D3.js or Leaflet for data visualization and mapping).</li>
+        <li><strong>Backend:</strong> Python or Node.js for handling data processing, filtering, and API requests.</li>
+        <li><strong>Database:</strong> Data will be stored in a relational database (e.g., PostgreSQL) and transformed into RDF for Linked Data applications.</li>
+    </ul>
+
+    <h2>Expected Users</h2>
+    <p>The application will be used by city planners, transportation authorities, and data analysts who are looking to optimize rail transportation services in urban areas. Additionally, the general public can access the app to monitor real-time rail performance and make travel decisions based on the data.</p>
+
+    </body>
+</html>

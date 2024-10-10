@@ -1,0 +1,15 @@
+@prefix : <http://example.org/rail#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:Train1 a :Train ;
+    :hasRoute :Route_Madrid_Barcelona .
+
+:Route_Madrid_Barcelona a :Route ;
+    :hasStation :Station_Madrid_Atocha, :Station_Barcelona_Sants .
+
+:Station_Madrid_Atocha a :Station ;
+    rdfs:label "Madrid Atocha" .
+
+:Station_Barcelona_Sants a :Station ;
+    rdfs:label "Barcelona Sants" .

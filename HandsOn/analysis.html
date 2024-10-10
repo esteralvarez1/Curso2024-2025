@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Data Source Analysis</title>
+        <meta name="description" content="Analysis of the data source, licensing, and resource naming strategy.">
+        <meta name="keywords" content="data source, analysis, licensing, naming strategy">
+    </head>
+
+    <body>
+    <h1>Data Source Analysis</h1>
+
+    <h2>Analysis of the Data Source</h2>
+    <p>The data source used in this project originates from Renfe, Spain’s national rail operator. The dataset contains information on passenger volumes, train capacities, and route performance for various rail services, such as long-distance (LD), medium-distance (MD), and commuter (Cercanías) trains. The data are divided by time periods, routes, and operational metrics like "Plazas Ofertadas" and "Viajeros.km". These metrics provide insight into the efficiency and usage of rail services in different corridors.</p>
+
+    <h2>Licensing of the Data Source</h2>
+    <p>The dataset currently does not have an explicitly defined license in the file itself. However, given that it likely originates from a public transport operator (Renfe), it is important to ensure that the data is either under an open data license such as Creative Commons (CC-BY) or an Open Data Commons License (ODbL). To proceed, the source must confirm the open reuse conditions for both commercial and non-commercial purposes.</p>
+
+    <h2>Resource Naming Strategy</h2>
+    <p>The resource naming strategy is critical for ensuring consistent identification of resources across datasets. In this project, URIs (Uniform Resource Identifiers) will be used to uniquely identify resources such as train services, stations, routes, and operational metrics. Each resource will follow a consistent naming convention:
+    <ul>
+        <li><strong>Train Routes:</strong> URIs will follow the format: <i>http://example.org/rail/route/[route_name]</i> (e.g., <i>http://example.org/rail/route/madrid-barcelona</i>).</li>
+        <li><strong>Stations:</strong> URIs will follow the format: <i>http://example.org/rail/station/[station_name]</i> (e.g., <i>http://example.org/rail/station/madrid-atocha</i>).</li>
+        <li><strong>Metrics:</strong> Operational metrics such as "Plazas Ofertadas" and "Viajeros.km" will be defined using terms like <i>http://example.org/rail/metrics/[metric_name]</i>.</li>
+    </ul>
+    This naming strategy will ensure interoperability and easy linking with other datasets, such as city infrastructure or public transport services.</p>
+
+    </body>
+</html>

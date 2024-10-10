@@ -1,0 +1,29 @@
+@prefix : <http://example.org/rail#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:Train a owl:Class ;
+    rdfs:label "Train" ;
+    rdfs:comment "A type of public transportation vehicle used for railway services." .
+
+:Route a owl:Class ;
+    rdfs:label "Route" ;
+    rdfs:comment "A predefined path between two or more railway stations." .
+
+:Station a owl:Class ;
+    rdfs:label "Station" ;
+    rdfs:comment "A location where passengers can board or exit trains." .
+
+:hasRoute a owl:ObjectProperty ;
+    rdfs:domain :Train ;
+    rdfs:range :Route ;
+    rdfs:label "has route" ;
+    rdfs:comment "Links a train to a specific route." .
+
+:hasStation a owl:ObjectProperty ;
+    rdfs:domain :Route ;
+    rdfs:range :Station ;
+    rdfs:label "has station" ;
+    rdfs:comment "Defines the stations along a train route." .
